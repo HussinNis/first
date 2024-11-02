@@ -1,52 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android: android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
+     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.252"
+        android:text="2/11/2024"
+         android:textSize="25dp"
+        android:layout_marginTop="10dp"
+         android:layout_gravity="center"
+        tools:layout_editor_absoluteX="179dp"
+         tools:layout_editor_absoluteY="45dp"
         />
-    <Button
-        android:id="@+id/button2"
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:hint="Enter your name"/>
+
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="159dp"
-        android:layout_marginEnd="164dp"
-        android:layout_marginBottom="112dp"
-        android:onClick="finishApp"
-        android:text="@string/exit"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:hint="Enter year of born"/>
+
     <Button
-        android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="159dp"
-        android:layout_marginTop="92dp"
-        android:layout_marginEnd="164dp"
-        android:onClick="change_text"
-        android:text="@string/change_text"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.54"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:onClick="shoDetails"/>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
