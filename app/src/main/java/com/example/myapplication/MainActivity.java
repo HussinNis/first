@@ -16,7 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
  public class MainActivity extends AppCompatActivity {
     private EditText etName, etYear;
     private TextView tvShowDetails;
-    private String name,details;
+    private String nam,details;
     private int year;
 
     @Override
@@ -38,10 +38,10 @@ import androidx.core.view.WindowInsetsCompat;
             Toast.makeText(this, "pleas fill in fieled.. ", Toast.LENGTH_SHORT).show();
         }
         else {
-            name= etName.getText().toString();
+            nam= etName.getText().toString();
             year= Integer.parseInt(etYear.getText().toString());
             int age = 2024 -year;
-            details ="welcome "+ name+"\nYour age is: "+age;
+            details ="welcome "+ nam+"\nYour age is: "+age;
             tvShowDetails.setText(details);
         }
     }
