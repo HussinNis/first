@@ -13,19 +13,22 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+ public class MainActivity extends AppCompatActivity {
     private EditText etName, etYear;
     private TextView tvShowDetails;
     private String name,details;
     private int year;
 
     @Override
+    @SuppressLint("MissingInflatedId")
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         etName = findViewById(R.id.etName);
+
         etYear = findViewById(R.id.etYear);
-        tvShowDetails = findViewById(R.id.tvShowDetails);
+
+        tvShowDetails = findViewById(R.id.textView);
 
     }
 
